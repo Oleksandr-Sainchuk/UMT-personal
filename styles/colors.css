@@ -1,0 +1,16 @@
+:root {
+  --primary-bg: #221d1d;
+  --primary-text: #ffffff;
+
+  /* Button */
+  --primary-button-bg: #ce4d46;
+  --primary-button-border-color: #a43d38;
+  --secondary-button-border-color: #ffffff33;
+  --pagination-button-border-color: #0a04044d;
+  --pagination-button-bg: #534f4f;
+
+  /* Select */
+  --select-border-color: #ffffff33;
+
+  --footer-border: #ffffff26;
+}
