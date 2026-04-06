@@ -4,13 +4,16 @@
 
   /* Button */
   --primary-button-bg: #ce4d46;
+  --primary-button-hover-bg: #521e1c;
   --primary-button-border-color: #a43d38;
   --secondary-button-border-color: #ffffff33;
+  --secondary-button-hover-bg: #ffffff26;
   --pagination-button-border-color: #0a04044d;
   --pagination-button-bg: #534f4f;
 
   /* Select */
   --select-border-color: #ffffff33;
+  --select-focused-border-color: #dc827d;
 
   --footer-border: #ffffff26;
 }
