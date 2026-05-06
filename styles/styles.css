@@ -4,7 +4,9 @@
 
 /* Shared */
 
-html:has(body.menu-open) {
+body.modal-open,
+body.menu-open {
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -147,6 +149,50 @@ body {
   pointer-events: none;
 }
 
+.input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: var(--regular);
+  letter-spacing: 0%;
+  color: var(--primary-text);
+}
+
+input,
+textarea {
+  border-radius: 6px;
+  border: 1px solid var(--select-border-color);
+  height: 40px;
+  padding: 8px 12px;
+  align-items: center;
+  transition: border-color 250ms ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  color: var(--primary-text);
+}
+
+textarea {
+  height: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: var(--regular);
+  color: var(--input-placeholder);
+}
+
+input:focus-visible,
+input:hover,
+textarea:focus-visible,
+textarea:hover {
+  border-color: var(--input-focused-border);
+  outline: none;
+}
+
 /* Header */
 
 .header .container {
@@ -249,6 +295,10 @@ body {
 
 .hero-button {
   width: 100%;
+}
+
+.hero-more-button {
+  text-align: center;
 }
 
 /* About */
@@ -729,6 +779,128 @@ option::checkmark {
   padding: 8px 0;
 }
 
+/* Detail modal */
+
+.modal-background {
+  background-color: var(--modal-bg);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.modal-background.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--primary-bg);
+  padding: 16px;
+  padding-bottom: 64px;
+  width: 90%;
+  height: auto;
+  max-height: 90%;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.detail-modal-container {
+  background-image: url("../images/detail-modal-bg@1x.png");
+  mix-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.modal-content-wrapper {
+  overflow-y: auto;
+  max-width: 315px;
+  margin: 0 auto;
+}
+
+.detail-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.close-modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text);
+  background-color: transparent;
+  padding: 0;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.close-modal-button svg {
+  width: 32px;
+  height: 32px;
+}
+
+.detail-modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 231px;
+}
+
+.detail-modal-texts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-modal-title {
+  font-weight: 500;
+  font-size: var(--heading-small-desktop);
+}
+
+.detail-modal-price {
+  font-weight: 500;
+  font-size: var(--large);
+}
+
+.detail-modal-text {
+  font-size: var(--regular);
+}
+
+.detail-modal-button {
+  width: 100%;
+}
+
+.order-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Order Modal */
+
+.order-modal-title {
+  font-weight: 500;
+  font-size: var(--heading);
+  text-align: center;
+  letter-spacing: -1%;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+
 /* Tablet styles */
 @media screen and (min-width: 768px) {
   /* Shared */
@@ -875,6 +1047,30 @@ option::checkmark {
 
   .menu-action-button {
     width: fit-content;
+  }
+
+  /* Detail modal */
+
+  .detail-modal-content-container {
+    max-width: 704px;
+  }
+
+  .detail-modal-content {
+    flex-direction: row;
+  }
+
+  .detail-modal-button {
+    width: fit-content;
+  }
+
+  .detail-modal-image {
+    width: auto;
+  }
+
+  /* Order modal */
+
+  .order-modal-container {
+    max-width: 787px;
   }
 }
 
@@ -1059,4 +1255,22 @@ option::checkmark {
   .footer-socials {
     margin-left: auto;
   }
+
+  /* Detail modal */
+
+  .detail-modal-container {
+    max-width: 1090px;
+  }
+
+  .modal-content-wrapper {
+    max-width: 1336px;
+  }
+
+  .detail-modal-image {
+    width: 501px;
+    max-height: 375px;
+    flex-shrink: 0;
+  }
+
+  /* Order modal */
 }

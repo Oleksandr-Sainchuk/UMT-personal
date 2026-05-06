@@ -1,6 +1,7 @@
 :root {
   --primary-bg: #221d1d;
   --primary-text: #ffffff;
+  --modal-bg: #00000040;
 
   /* Button */
   --primary-button-bg: #ce4d46;
@@ -16,4 +17,6 @@
   --select-focused-border-color: #dc827d;
 
   --footer-border: #ffffff26;
+  --input-placeholder: #ffffff99;
+  --input-focused-border: #f5dbda;
 }

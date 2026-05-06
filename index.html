@@ -47,7 +47,7 @@
             </svg>
           </button>
         </nav>
-        <button type="button" class="primary-button header-button">Замовити</button>
+        <button id="order-button" type="button" class="primary-button header-button">Замовити</button>
       </div>
     </header>
     <main>
@@ -58,8 +58,8 @@
             Наші печі та каміни створені для вашого комфорту. Вони поєднують елегантний дизайн з високою ефективністю.
           </p>
           <div class="hero-buttons">
-            <button type="button" class="primary-button hero-button">Замовити</button>
-            <button type="button" class="secondary-button hero-button">Детальніше</button>
+            <button id="order-button" type="button" class="primary-button hero-button">Замовити</button>
+            <a href="#catalogue" type="button" class="secondary-button hero-button hero-more-button">Детальніше</a>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@
               <option value="standart">Стандарт</option>
             </select>
           </div>
-          <ul class="catalogue-list">
+          <ul class="catalogue-list" id="catalogue-list">
             <li class="catalogue-list-item">
               <img
                 class="catalogue-item-image"
@@ -164,7 +164,9 @@
               <h3 class="catalogue-item-title">Піч-камін "Теплий Дім"</h3>
               <p class="catalogue-item-text">Класичний комфорт для вашої оселі.</p>
               <p class="catalogue-item-price">8 900 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -176,7 +178,9 @@
               <h3 class="catalogue-item-title">Сучасна піч "Мінімаліст"</h3>
               <p class="catalogue-item-text">Елегантне тепло для сучасних інтер'єрів.</p>
               <p class="catalogue-item-price">27 300 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -188,7 +192,9 @@
               <h3 class="catalogue-item-title">Камін "Гранд"</h3>
               <p class="catalogue-item-text">Велич та затишок у вашій вітальні.</p>
               <p class="catalogue-item-price">42 400 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -200,7 +206,9 @@
               <h3 class="catalogue-item-title">Пелетний котел "Плюс"</h3>
               <p class="catalogue-item-text">Рішення для економного опалення.</p>
               <p class="catalogue-item-price">33 000 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -212,7 +220,9 @@
               <h3 class="catalogue-item-title">Чавунна піч "Надійний Жар"</h3>
               <p class="catalogue-item-text">Довговічність та стабільне тепло на роки.</p>
               <p class="catalogue-item-price">22 200 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -224,7 +234,9 @@
               <h3 class="catalogue-item-title">Електричний камін "Миттєвий Затишок"</h3>
               <p class="catalogue-item-text">Атмосфера справжнього вогню без зусиль.</p>
               <p class="catalogue-item-price">31 800 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -236,7 +248,9 @@
               <h3 class="catalogue-item-title">Вбудований камін "Прихована Краса"</h3>
               <p class="catalogue-item-text">Ідеальне поєднання дизайну та функціональності.</p>
               <p class="catalogue-item-price">29 900 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -248,7 +262,9 @@
               <h3 class="catalogue-item-title">Піч-булерьян "Потужне Тепло"</h3>
               <p class="catalogue-item-text">Швидкий обігрів великих приміщень.</p>
               <p class="catalogue-item-price">18 900 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -260,7 +276,9 @@
               <h3 class="catalogue-item-title">Декоративний камін "Естетика Вогню"</h3>
               <p class="catalogue-item-text">Створіть унікальний акцент у своєму інтер'єрі.</p>
               <p class="catalogue-item-price">22 000 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -272,7 +290,9 @@
               <h3 class="catalogue-item-title">Дров'яна піч "Традиція Тепла"</h3>
               <p class="catalogue-item-text">Перевірений часом спосіб зігріти ваш дім.</p>
               <p class="catalogue-item-price">15 000 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -284,7 +304,9 @@
               <h3 class="catalogue-item-title">Садова піч "Вечірні Вогні"</h3>
               <p class="catalogue-item-text">Додайте шарму вашим посиденькам на свіжому повітрі.</p>
               <p class="catalogue-item-price">13 500 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
             <li class="catalogue-list-item">
               <img
@@ -296,7 +318,9 @@
               <h3 class="catalogue-item-title">Аксесуари для камінів "Досконалість у Деталях"</h3>
               <p class="catalogue-item-text">Все для безпечної та комфортної експлуатації.</p>
               <p class="catalogue-item-price">4 900 грн</p>
-              <button class="secondary-button catalogue-more-button" type="button">Детальніше</button>
+              <button id="catalogue-more-button" class="secondary-button catalogue-more-button" type="button">
+                Детальніше
+              </button>
             </li>
           </ul>
           <button type="button" class="primary-button catalogue-item-show-more-button">Показати ще</button>
@@ -527,9 +551,52 @@
           <li><a href="#contacts" class="general-link menu-navigation-link">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button" class="primary-button menu-action-button">Замовити</button>
+      <button id="order-button" type="button" class="primary-button menu-action-button">Замовити</button>
     </div>
-    <script src="./js//mobile-menu.js"></script>
+    <div class="modal-background" id="detail-modal" data-detail-modal>
+      <div class="modal-container detail-modal-container">
+        <button type="button" id="close-modal-button" class="close-modal-button">
+          <svg><use href="./icons/sprite.svg#close"></use></svg>
+        </button>
+        <div class="detail-modal-content-wrapper">
+          <div id="detail-modal-content" class="detail-modal-content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-background" id="order-modal" data-order-modal>
+      <div class="modal-container order-modal-container">
+        <button type="button" id="close-modal-button" class="close-modal-button">
+          <svg><use href="./icons/sprite.svg#close"></use></svg>
+        </button>
+        <div class="modal-content-wrapper">
+          <form id="order-modal-form" class="order-modal-content">
+            <h2 class="order-modal-title">Оформлення замовлення</h2>
+            <div class="order-modal-form">
+              <div class="input-block">
+                <label for="name">Ваше ім’я*</label>
+                <input id="name" name="name" type="text" placeholder="Максим" required />
+              </div>
+              <div class="input-block">
+                <label for="phone">Телефон*</label>
+                <input id="phone" name="phone" type="tel" placeholder="+38 (099) 123 23 43" required />
+              </div>
+              <div class="input-block">
+                <label for="address">Адреса доставки*</label>
+                <input id="address" name="address" type="text" placeholder="вул. Гетьмана Мазепи 15, Львів" required />
+              </div>
+              <div class="input-block">
+                <label for="comment">Коментар</label>
+                <textarea id="comment" name="comment" placeholder="Ваш коментар..." rows="5"></textarea>
+              </div>
+              <button type="submit" class="primary-button">Замовити</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
